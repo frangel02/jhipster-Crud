@@ -1,0 +1,25 @@
+
+entity Client {
+	    
+      id String unique ,
+      nombre String required,
+      apellido String required,
+      direccion String ,
+      cedula String maxlength(10) minlength(10),
+      telefono String maxlength(10) minlength(10),
+      celular String maxlength(10) minlength(10),
+      sexo String required,
+      email String ,
+      fechaDeIngreso Instant required
+}
+
+
+
+paginate Client with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
